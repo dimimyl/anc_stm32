@@ -2,8 +2,8 @@ import serial
 import csv
 
 # File paths
-input_csv_file = "C:/Users/el041/Documents/anc/coeffs.csv"
-output_csv_file = "C:/Users/el041/Documents/anc/coeffs_echo.csv"
+input_csv_file = "my_path.csv"
+output_csv_file = "my_path_echo.csv"
 
 # Serial port configuration
 serial_port = "COM5"
@@ -41,3 +41,4 @@ def send_and_receive_coefficients(input_file, output_file, port, baud):
 
 if __name__ == "__main__":
     send_and_receive_coefficients(input_csv_file, output_csv_file, serial_port, baud_rate)
+
